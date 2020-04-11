@@ -8,6 +8,14 @@ import shutil
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from dotenv import load_dotenv
+load_dotenv()
+import os
+
+
+INSTAGRAM_USERNAME = os.getenv('INSTAGRAM_USERNAME')
+INSTAGRAM_PASSWORD = os.getenv('INSTAGRAM_PASSWORD')
+SAVE_TO_PATH = os.getenv('SAVE_TO_PATH')
 
 url = 'https://www.instagram.com/espenpalervaag/'
 image_url = 'https://instagram.fsvg1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/90085967_829026910950978_' \
