@@ -1,5 +1,5 @@
 '''
-Script som laster ned alle bildene espenpalervaag legger ut og laster opp de bildene han sletter.
+Script som laster ned alle bildene valgt instagram-bruker legger ut og laster opp de som slettes.
 '''
 import os
 import instapy_cli as client
@@ -12,7 +12,8 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-
+os.path.isfile('.env')
+os.listdir()
 INSTAGRAM_USERNAME = os.getenv('INSTAGRAM_USERNAME')
 INSTAGRAM_PASSWORD = os.getenv('INSTAGRAM_PASSWORD')
 SAVE_TO_PATH = os.getenv('SAVE_TO_PATH')
