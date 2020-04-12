@@ -12,14 +12,13 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-os.listdir('Instagram parser/')
 os.listdir()
 os.getcwd()
 INSTAGRAM_USERNAME = os.getenv('INSTAGRAM_USERNAME')
 INSTAGRAM_PASSWORD = os.getenv('INSTAGRAM_PASSWORD')
-SAVE_TO_PATH = os.getenv('SAVE_TO_PATH')
+USER_TO_FOLLOW = os.getenv('USER_TO_FOLLOW')
 
-url = 'https://www.instagram.com/espenpalervaag/'
+url = 'https://www.instagram.com/{}/'.format(USER_TO_FOLLOW)
 image_url = 'https://instagram.fsvg1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/90085967_829026910950978_' \
           '7207290314169028145_n.jpg?_nc_ht=instagram.fsvg1-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=sKNKR76hvLQA' \
           'X9GI5MR&oh=d5c528a6e6c7c6e3534e9bfc935a986c&oe=5EA41047'
