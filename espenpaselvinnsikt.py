@@ -46,9 +46,6 @@ soup = BeautifulSoup(page.content, "html.parser")
 image_desc = soup.find_all('', class_="_6lAjh")
 image_desc
 
-username = 'espenpaselvinnsikt' #your username
-password = 'abcde12345.' #your password
-image = 'Hi_instagram.png' #here you can put the image directory
 text = 'Here you can put your caption for the post' + '\r\n' + 'new line #hashtag'
 with client(username, password) as cli:
     cli.upload(image, text)
