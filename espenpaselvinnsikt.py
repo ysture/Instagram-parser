@@ -12,8 +12,9 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-os.path.isfile('.env')
+os.listdir('Instagram parser/')
 os.listdir()
+os.getcwd()
 INSTAGRAM_USERNAME = os.getenv('INSTAGRAM_USERNAME')
 INSTAGRAM_PASSWORD = os.getenv('INSTAGRAM_PASSWORD')
 SAVE_TO_PATH = os.getenv('SAVE_TO_PATH')
